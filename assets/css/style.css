@@ -1,0 +1,38 @@
+body{
+    margin: 50px;
+}
+
+.card{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    background-color: greenyellow;
+    border: 5px black solid;
+    border-radius: 8px;
+}
+
+.card>.front, .card>.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    align-content: center;
+    text-align: center;
+}
+
+.front{
+    background-color: brown;
+    backface-visibility: hidden;
+}
+
+.back{
+    background-color: purple;
+    transform: rotateY(90deg);
+    backface-visibility: hidden;
+    /* display: none; */
+}
+
+/* @keyframes{
+
+} */
